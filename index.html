@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://ww.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Yaser Ibrahim" />
+<meta property="og:title" content="Yaser Ibrahim - Information Engineer" />
+<meta name =="viewport" content="width-device-width, initial-scale=1">
+<title>Yaser Ibrahim's e-Resume</title>
+
+<style type="text/css">
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 'Lato', sans-serif;
+}
+
+.contact-form {
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #e5e2e1;
+}
+.contact-form:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #e5e2e1;
+  border-right: 10px solid transparent;
+}
+
+.field-container {
+  margin-bottom: 20px;
+}
+.field-container:last-child {
+  margin: 0;
+}
+.field-container:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -1px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #bab6b6;
+}
+.field-container.is-focused:after {
+  border-color: #ff4c52;
+}
+
+.input {
+  width: 100%;
+  margin: 0;
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: 16px/1 'Lato', san-serif;
+  color: #404040;
+}
+
+.text-area {
+  min-height: 38px;
+  height: 38px;
+  margin: 2px 0 3px;
+  overflow-y: hidden;
+  resize: none;
+  -webkit-transition: height .1s;
+  -moz-transition: height .1s;
+  transition: height .1s;
+}
+
+::-webkit-input-placeholder {
+  color: #bab6b6;
+}
+
+:-moz-placeholder {
+  color: #bab6b6;
+}
+
+:-ms-placeholder {
+  color: #bab6b6;
+}
+
+
+iframe {
+padding: 10px;
+  position: relative;
+  top: 50%;
+  left: 0%;
+
+}
+
+</style> 
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+ <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+
+	<script src="js/letss.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/profile.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/proj.css" media="screen" />
+	
+	
+</head>
+<body  id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                   <span class="glyphicon glyphicon-tent"></span><span class="light"> Yaser</span> Ibrahim
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#page-top">Intro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+					<!--i>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li-->
+					<li>
+                        <a class="page-scroll" href="#moreme">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download"><span class="glyphicon glyphicon-save"></span>Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+							<div class="contain">
+
+					<h1><div class="tilerr">Hello, مرحبا, hola, Bonjour, Здравствуйте</div></h1>
+					<div class="service-details">
+						<img src="Pics/me03.jpg" alt="realm"><a name="profilecard"></a>
+							<div class="service-hover-text">
+								<h3>Yaser Ibrahim</h3>
+								<h4>Information Engineering </h4>
+								<p>Passionate on game development, web development, coffee, and different cultures. </p>
+							</div>
+						<div class="service-white service-text">
+						<p>Yaser Ibrahim</p>
+						<a href="https://twitter.com/yaser3808" >@Yaser_Ibrahim</a>
+						</div>
+						</div>
+			</div>
+					
+					
+                        <!--h1 class="brand-heading">Yaser Ibrahim</h1>
+                        <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p-->
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>     
+    
+        
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+
+	
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <p>I'm currently taking a Bachelors in 
+Information Engineering at the City University of Hong Kong. I'm mostly interested with programming and networking. 
+I have a good background in C, C#, C++, Java, HTML5, CSS3 and etc...</p>
+				
+                <p>I also speaks a few languages, such as English and Arabic(عربي) at a native proficiency with French(français) at a beginners level
+				along with future interest in spanish and russian, 
+Languages fascinate and interest him as they are all diverse, each in its own unique style and it helps to open the lines of communication between people.
+he believes that each language a person can speak, enables them to see everything in different perspectives.</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+	
+	
+	  <!-- Portfolio Grid Section -->
+    <!--section id="portfolio" class="bg-lomi">
+        <div class="container">
+		
+  <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Some of the projects I have done</h3>
+                </div>
+            </div>
+			
+			
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+				
+				
+				
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Startup Framework</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+				
+				
+				
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Treehouse</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+				
+				
+				
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Golden</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+				
+				
+				
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Escape</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+				
+				
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+				
+				
+				
+            </div>
+		
+  </div>
+    </section-->
+
+
+	<section id="moreme" class="container content-section text-center moreme" >
+	
+	<p></p>
+	
+<iframe src="https://drive.google.com/file/d/0B10p4kzhXUo6NFBFSmlidmMwRGs/preview" width="700" height="600"></iframe>
+<p>To download resumé click button below</p>
+<a href="#download" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+
+	</section>
+	
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+				
+			<a onClick="window.location.href='Yaser-Ibrahim_s-Resume.pdf'" target="_blank">	
+<span class="glyphicon glyphicon-download">
+				</a>
+				
+				
+                    <h2>Download Resume Here</h2>
+					
+					
+                    <a onClick="window.location.href='Yaser-Ibrahim_s-Resume.pdf'" class="btn btn-default btn-lg" target="_blank">Download</a>
+					</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2><u>Contact Me</u></h2>
+                <p>Feel free to say hello!</p>
+				<hr/>
+				<img class="img-circle" src="Pics/Me03.JPG" height="200" width="200">
+				<br/>
+				<br/>
+
+                <form action="#" method="post" class="contact-form">
+  <div class="field-container">
+    <input type="text" class="input" name="name" placeholder="Name" />
+  </div>
+  <div class="field-container">
+    <input type="text" class="input" name="email" placeholder="Email" />
+  </div>
+  <div class="field-container">
+    <textarea class="input text-area" name="message" placeholder="Your Message"></textarea>
+  </div>
+</form>
+<hr/>
+
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/yaser3808" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/111280690123801364652" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+				<ul class="list-inline banner-social-buttons"><li><button type="button" class="btn btn-default btn-lg">
+				  <a href="mailto:yaser3808@gmail.com">
+   <span class="glyphicon glyphicon-envelope">
+   </span>
+   </a>
+</button></li><ul>
+            </div>
+        </div>
+    </section>
+
+
+<section id="about" name="about"></section>
+	<div class="container content-section text-center">
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	<!-- ========== ABOUT - GREY SECTION ========== -->
+	<!--section id="about" name="about"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3>Other Profiles To Check</h3>
+				<br>
+				<br>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+				<p></p>
+				<br>
+				<br>
+				</div>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-3 team">
+							<a href="#.html">
+ 
+					<img class="img-circle" src="Pics/F.JPG" height="200" width="200">
+					
+					
+					<h4>Fatma Elghoul</h4>
+					<h5><i> Beauty Therapist & Certified Educator</i></h5>
+					<p> <h5>Very fun personality and a passionate soul. I was born, raised in, and currently living in Sydney, Australia</p>
+					<p><h5><a href="#.html">More About Me..</a></h5></p>
+					<p><span class="signature"> Fatma elghoul</span>
+							</a>
+					</p>
+				</div>
+
+
+
+
+
+				<!--div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team04.jpg" height="90" width="90">
+					<h4>Tim Gates</h4>
+					<h5><i>Back-end Guru</i></h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<p>
+						<a href="index.html#"><i class="icon-facebook"></i></a>
+						<a href="index.html#"><i class="icon-twitter"></i></a>
+						<a href="index.html#"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /g -->
+	
+
+	
+	
+	<section class="container content-section text-center">
+    <h2>Projects statistics</h2>
+<hr/>
+<div id="projectFacts" class="sectionClass">
+    <div class="fullWidth eight columns">
+        <div class="projectFactsWrap ">
+            <div class="item wow fadeInUpBig animated animated" data-number="5" style="visibility: visible;">
+                <i class="fa fa-briefcase"></i>
+                <p id="number1" class="number">5</p>
+                <span></span>
+                <p>Projects done</p>
+            </div>
+
+            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                <i class="fa fa-coffee"></i>
+                <p id="number3" class="number">359</p>
+                <span></span>
+                <p>Cups of coffee</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+	
+
+        <div class="container text-center">
+            <p>Copyright &copy; Yaser Ibrahim's Website 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
