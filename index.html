@@ -6,6 +6,8 @@
 <meta name="author" content="Yaser Ibrahim" />
 <meta property="og:title" content="Yaser Ibrahim - Information Engineer" />
 <meta name =="viewport" content="width-device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-title" content="Yaser Ibrahim's Resume">
+ <meta name="application-name" content="Yaser Ibrahim's Resume">
 <title>Yaser Ibrahim's e-Resume</title>
 
 <style type="text/css">
@@ -21,6 +23,10 @@
 body {
   font: 16px/1.5 'Lato', sans-serif;
 }
+
+
+ body { /* for safari's tint */ 
+ background-color: #00919F; }
 
 .contact-form {
   position: relative;
@@ -192,15 +198,15 @@ padding: 10px;
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
 
-							<div class="contain">
-
+			<div class="contain">
 					<h1><div class="tilerr">Hello, مرحبا, hola, Bonjour, Здравствуйте</div></h1>
 					<div class="service-details">
-						<img src="Pics/moi.JPG" ><a name="profilecard"></a>
+						<img src="Pics/moi.jpg" alt="realm"><a name="profilecard"></a>
 							<div class="service-hover-text">
 								<h3>Yaser Ibrahim</h3>
 								<h4>Information Engineering </h4>
-								<p>Passionate on game development, web development, coffee, and different cultures. </p>
+								<p>
+								Passionate on game development, web development, coffee, and different cultures. </p>
 							</div>
 						<div class="service-white service-text">
 						<p>Yaser Ibrahim</p>
@@ -229,14 +235,13 @@ padding: 10px;
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Me</h2>
-                <p>I'm currently taking a Bachelors in 
-Information Engineering at the City University of Hong Kong. I'm mostly interested with programming and networking. 
-I have a good background in C, C#, C++, Java, HTML5, CSS3 and etc...</p>
+                <p>I'm currently taking a Bachelors in Information Engineering at the City University of Hong Kong.
+				I have an interest in programming & networking. I have a good background in C, C#, C++, Java, HTML5, CSS3, and etc...</p>
 				
-                <p>I also speaks a few languages, such as English and Arabic(عربي) at a native proficiency with French(français) at a beginners level
-				along with future interest in spanish and russian, 
-Languages fascinate and interest him as they are all diverse, each in its own unique style and it helps to open the lines of communication between people.
-he believes that each language a person can speak, enables them to see everything in different perspectives.</p>
+                <p>I also speak a few languages, such as English & Arabic(عربي) at a native proficiency and French(français) at a beginners level
+				along with an interest to learn Spanish and Russian in the future, languages tend to fascinate & interest me as they are all diverse, 
+				each in its own unique style, it helps to open the lines of communication between people as language is usually integrated into many languages.
+				I believe that with each language a person can speak, enables them to see everything in different perspectives.</p>
                 <p></p>
             </div>
         </div>
@@ -404,40 +409,58 @@ he believes that each language a person can speak, enables them to see everythin
                 <h2><u>Contact Me</u></h2>
                 <p>Feel free to say hello!</p>
 				<hr/>
-				<img class="img-circle" src="Pics/moi.JPG" height="200" width="200">
+				<img class="img-circle" src="Pics/moi.jpg" height="200" width="200">
 				<br/>
 				<br/>
 
-                <form action="#" method="post" class="contact-form">
+                <form action="#" method="post" class="contact-form" name="sentMessage" id="contactForm" novalidate>
   <div class="field-container">
-    <input type="text" class="input" name="name" placeholder="Name" />
+    <input type="text" class="input" name="name" placeholder="Name" required data-validation-required-message="Please enter your name." />
   </div>
   <div class="field-container">
-    <input type="text" class="input" name="email" placeholder="Email" />
+    <input type="email"  class="input" name="email" placeholder="Email" required data-validation-required-message="Please enter your Email." />
   </div>
   <div class="field-container">
-    <textarea class="input text-area" name="message" placeholder="Your Message"></textarea>
+   <input type="tel" class="input" type="number" pattern="[0-9]*" name="Your Phone" placeholder="Your Phone (Optional)" id="phone">
   </div>
+  
+  
+  <div class="field-container">
+    <textarea class="input text-area" name="message" placeholder="Your Message" required data-validation-required-message="Please Enter your message"></textarea>
+  </div>
+    <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
 </form>
 <hr/>
+
+
+
 
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/yaser3808" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
+					<br/>
+
+					<br/>
                     <li>
                         <a href="https://github.com/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
+					<br/>
+					<br/>
                     <li>
                         <a href="https://plus.google.com/111280690123801364652" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
+					<br/>
+					<br/>
                 </ul>
 				<ul class="list-inline banner-social-buttons"><li><button type="button" class="btn btn-default btn-lg">
 				  <a href="mailto:yaser3808@gmail.com">
-   <span class="glyphicon glyphicon-envelope">
-   </span>
+					<span class="glyphicon glyphicon-envelope"></span>
    </a>
-</button></li><ul>
+</button></li><hr/><ul>
             </div>
         </div>
     </section>
@@ -473,14 +496,14 @@ he believes that each language a person can speak, enables them to see everythin
 				<div class="col-lg-3 team">
 							<a href="#.html">
  
-					<img class="img-circle" src="Pics/F.JPG" height="200" width="200">
+					<img class="img-circle" src="#" height="200" width="200">
 					
 					
-					<h4>Fatma Elghoul</h4>
-					<h5><i> Beauty Therapist & Certified Educator</i></h5>
-					<p> <h5>Very fun personality and a passionate soul. I was born, raised in, and currently living in Sydney, Australia</p>
+					<h4>(name)</h4>
+					<h5><i> (profession) </i></h5>
+					<p> <h5> (description of person) </h5></p>
 					<p><h5><a href="#.html">More About Me..</a></h5></p>
-					<p><span class="signature"> Fatma elghoul</span>
+					<p><span class="signature"> (name) </span>
 							</a>
 					</p>
 				</div>
@@ -525,12 +548,13 @@ he believes that each language a person can speak, enables them to see everythin
                 <i class="fa fa-coffee"></i>
                 <p id="number3" class="number">359</p>
                 <span></span>
-                <p>Cups of coffee</p>
+                <p>Cups of coffee taken</p>
             </div>
 
         </div>
     </div>
 </div>
+</section>
 
     <!-- Footer -->
     <footer>
